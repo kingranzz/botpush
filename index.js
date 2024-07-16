@@ -157,7 +157,7 @@ vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await haikal.getName(i + '@s.whatsapp.net'
 haikal.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })}
 //=================================================//
 //Kalau Mau Self Lu Buat Jadi false
-haikal.public = true
+haikal.public = false
 //=================================================//
 //=================================================//
 haikal.ev.on('creds.update', saveCreds)
